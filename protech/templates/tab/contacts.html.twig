@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contacts{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1 align="center">Contacts</h1>
+
+    <br>
+
+    <h3>Aide aux victimes de cyber-harcèlement</h3>
+
+    <ul>
+      <li>Numéro vert national Net Ecoute (ligne d'écoute anonyme et gratuite) : 0800 200 000</li>
+      <li>Site du gouvernement destiné aux victimes et aux témoins de harcèlement scolaire : <a href="https://www.nonauharcelement.education.gouv.fr/">cliquez ici</a></li>
+      <li>Signaler du contenu inapproprié sur Twitter : <a href="https://help.twitter.com/fr/safety-and-security/report-abusive-behavior">cliquez ici</a></li>
+      <li>Signaler auprès de la police : <a href="https://www.internet-signalement.gouv.fr/PortailWeb/planets/SignalerEtapeAccepter!load.action;jsessionid=93DD5CE194F6E8E9F2AFDA46A1132A7E.route2">
+        cliquez ici</a></li>
+      </ul>
+
+    <br>
+
+    <h3>L'équipe d'e-usticia</h3>
+
+    <img width="100" height="100" alt="Blog Emse" src="{{ asset('img/erwan.png') }}">
+    <p>Erwan Tinen-Touolac : erwan.tinentouolac@etu.emse.fr</p>
+    <img width="100" height="100" alt="Blog Emse" src="{{ asset('img/lisa.jpg') }}">
+    <p>Lisa Giordani : lisa.giordani@etu.emse.fr</p>
+    <img width="100" height="100" alt="Blog Emse" src="{{ asset('img/adrien.jpg') }}">
+    <p>Adrien Grimberg : adrien.grimberg@etu.emse.fr</p>
+    <img width="100" height="100" alt="Blog Emse" src="{{ asset('img/oscar.PNG') }}">
+    <p>Oscar Jozon : oscar.jozon@etu.emse.fr</p>
+
+    <br></br>
+
+    <h3>Remerciements</h3>
+
+    <p>Nous remercions notre tuteur de projet M. Lefrançois pour ses conseils techniques et en matière de gestion de projet.</p>
+    <p>Nous tenions également à remercier Mme. Villata pour avoir partagé avec nous son expérience sur les algorithmes de
+      détection du cyberharcèlement à travers une interview et un article concernant son projet CREEP.</p>
+
+{% endblock %}

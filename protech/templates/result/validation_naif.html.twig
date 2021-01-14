@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    <h1>Résultats de la validation de l'algorithme</h1>
+{% endblock %}
+
+{% block body %}
+
+<style>
+    .wrapper1 { margin: 2em auto; margin-left: auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .wrapper1 code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="wrapper1">
+
+    <p>Voici quelques <strong>statistiques</strong> réalisées sur plusieurs appels de l'algorithme dont on cherche à évaluer la qualité.
+    Vous trouverez également la <strong>moyenne</strong> de l'ensemble de ces statistiques en bas de page.</p>
+
+    <h2>Statistiques</h2>
+</div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Type de validation</th>
+                <th>Nombre de tweets</th>
+                <th>Pourcentage de tweets offensants</th>
+                <th>VP</th>
+                <th>FP</th>
+                <th>VN</th>
+                <th>FN</th>
+                <th>FP rate</th>
+                <th>FN rate</th>
+                <th>Recall</th>
+                <th>Precision</th>
+                <th>F-score</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for statistic in statistics %}
+            <tr>
+                <td>{{ statistic.recipientId }}</td>
+                <td>{{ statistic.countTweets }}</td>
+                <td>{{ statistic.pourcentage }}%</td>
+                <td>{{ statistic.vp }}</td>
+                <td>{{ statistic.fp }}</td>
+                <td>{{ statistic.vn }}</td>
+                <td>{{ statistic.fn }}</td>
+                <td>{{ statistic.fpRate }}</td>
+                <td>{{ statistic.fnRate }}</td>
+                <td>{{ statistic.recall }}</td>
+                <td>{{ statistic.precision }}</td>
+                <td>{{ statistic.fScore}}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="14">Erreur : aucune statistique n'est présente dans la base de données</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+{% endblock %}

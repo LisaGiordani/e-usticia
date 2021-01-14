@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Algorithme naïf{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1 align="center">L'algorithme naïf</h1>
+    <br></br>
+
+    <h3>Principe de l'algorithme</h3>
+
+    <p>L’algorithme naïf détecte les tweets contenant au moins une <strong>insulte fréquemment utilisée</strong> dans le langage courrant.
+      Cette recherche s'effectue sur une partie des tweets reçus par la victime présumée au cours des <strong>8 derniers jours</strong>.
+    </p>
+    <p>Le mode "<strong>démo</strong>" permet de tester les performances de l'algorithme. Dans ce mode, la recherche des tweets insultants n'a plus lieu sur Twitter
+      mais sur une partie (100 tweets) d'une base de données de tweets contenant 50% de tweets offensants. Ces tweets ne sont donc plus destinés à un utilisateur Twitter en particulier.</p>
+    <p><u>Point fort</u> : Détection des insultes communément utilisées dans le langage courant</p>
+    <p><u>Points faibles</u> : Ne peut détecter l’ironie, l'humour ou les insultes plus subtiles</p>
+
+    <br>
+
+    <h3>Utilisation de l'algorithme</h3>
+
+    <p>Entrez l'identifiant Twitter de la présumée victime de cyber-harcèlement
+    <a class="btn btn-outline-info" href="{{ path('web_request_new') }}">ici</a></p>
+
+    <p>Puis,
+    <a class="btn btn-info" href="{{ asset('main/generateNaif') }}">Lancer l'algorithme</a></p>
+
+    <br>
+
+    <p>Ou bien vous pouvez :
+    <a class="btn btn-info" href="{{ asset('main/generateDemoNaif') }}">Lancer la démo</a></p>
+
+    <br>
+
+    <p>Afin d’obtenir des informations plus complètes,
+      il est conseillé de mettre en lien les résultats de l’algorithme naïf
+      avec ceux donnés par l’<strong>intelligence artificielle</strong>.</p>
+
+{% endblock %}

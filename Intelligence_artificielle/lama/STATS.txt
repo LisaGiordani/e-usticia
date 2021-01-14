@@ -1,0 +1,18 @@
+MODEL 1 STATS:
+    precision : 0.5121094581490504  (actual positives out of predicted positives)
+    recall : 0.8506020309952662  (predicted positives out of actual positives)
+    FP : 0.4878905418509496  (wrongly predicted positives out of predicted positives)
+    FN : 0.14939796900473376  (unreported offensive proportion)
+    F-SCORE : 0.639315583178936
+MODEL 2 STATS:
+    precision : 0.49851745576279294  (actual positives out of predicted positives)
+    recall : 0.921372591384966  (predicted positives out of actual positives)
+    FP : 0.5014825442372071  (wrongly predicted positives out of predicted positives)
+    FN : 0.07862740861503408  (unreported offensive proportion)
+    F-SCORE : 0.6469801249603465
+MODEL 3 STATS:
+    precision : 0.9685193042002546  (actual positives out of predicted positives)
+    recall : 0.45656  (predicted positives out of actual positives)
+    FP : 0.03148069579974544  (wrongly predicted positives out of predicted positives)
+    FN : 0.54344  (unreported offensive proportion)
+    F-SCORE : 0.6205790403697159

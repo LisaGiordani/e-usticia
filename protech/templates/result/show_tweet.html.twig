@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tweet{% endblock %}
+
+{% block body %}
+
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+
+    <h2>Tweet détecté comme offensant par l'algorithme</h2>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Date à laquelle a été posté le tweet</th>
+                <td>{{ tweet.date ? tweet.date|date('d/m/Y H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Identifiant Twitter de l'auteur du tweet</th>
+                <td>@{{ tweet.authorId }}</td>
+            </tr>
+            <tr>
+                <th>Nom de l'auteur du tweet</th>
+                <td>{{ tweet.authorName }}</td>
+            </tr>
+            <tr>
+                <th>Identifiant Twitter de la personne visée par le tweet</th>
+                <td>@{{ tweet.recipientId }}</td>
+            </tr>
+            <tr>
+                <th>Tweet</th>
+                <td>{{ tweet.message }}</td>
+            </tr>
+            <tr>
+                <th>URL du tweet</th>
+                <td><a href="{{ tweet.url }}">{{ tweet.url }}</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    {{ include('result/_delete_tweet_form.html.twig') }}
+
+    <br>
+
+    <a class="btn btn-info" href="{{ path('view_result') }}">Retourner aux résultats de l'algorithme</a>
+
+</div>
+
+{% endblock %}

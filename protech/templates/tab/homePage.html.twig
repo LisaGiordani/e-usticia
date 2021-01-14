@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page d'accueil{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+
+  <h3>Présentation du projet</h3>
+
+  <p>e-ustitia est le fruit d’un projet technique lancé par quatre élèves de l’<i>Ecole des Mines de Saint-Etienne</i>,
+    visant à combattre le <strong>cyberharcèlement sur Twitter</strong>.</p>
+  <p>Les algorithmes utilisés par le site détectent les tweets pouvant témoigner d'un cyberharcèlement et
+    les mettent à disposition de la victime afin de l'aider à prouver le harcèlement dont elle est la cible.</p>
+  <br>
+
+  <h3>Présentation des algorithmes</h3>
+
+  <p>Deux algorithmes sont mis à votre disposition :</p>
+
+  <p>Un <strong>algorithme naïf</strong> qui détecte les tweets qui vous sont destinés possédant au moins une insulte
+    largement utilisée dans le langage courant.
+    Cette méthode est efficace pour déceler les cas flagrants de cyberharcèlement,
+    mais peut avoir des difficultés à détecter les insultes plus élaborées.</p>
+
+  <td>
+      <a class="btn btn-info" href="{{ asset('simpleAlgorithme') }}">Tester l'algorithme naïf</a>
+  </td>
+  <br></br>
+
+  <p>Une <strong>intelligence artificielle</strong> capable de détecter les insultes moins fréquemment utilisées dans le langage courant ainsi que l'ironie et l'humour.
+    Le taux de détection de faux positifs est cependant supérieur à celui de l’algorithme naïf.</p>
+
+  <td>
+      <a class="btn btn-info" href="{{ asset('IA') }}">Tester l'intelligence artificielle</a>
+  </td>
+  <br></br>
+  <br>
+
+</div>
+
+{% endblock %}

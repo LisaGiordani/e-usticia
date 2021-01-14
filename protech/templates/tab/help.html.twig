@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}FAQ{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1 align="center">Foire aux questions</h1>
+    <br></br>
+
+    <h4>Q : Comment fonctionne les algorithmes du site web ?</h4>
+
+    <p>R : e-ustitia met à disposition deux algorithmes détectant les tweets pouvant témoigner d'un cyber-harcèlement à l'encontre
+      d'un utilisateur de Twitter, qui lui ont été adressés au cours des 8 jours précédant la recherche.
+      Pour utiliser l'un de ces algorithmes, il vous faudra suivre les étapes suivantes :
+      <ol>
+        <li>Vous pouvez accéder à l'un des <strong>algorithmes</strong> (naïf ou IA) à l'aide de la barre de navigation supérieure.</li>
+        <li>Ensuite, il vous sera demandé de <strong>fournir l'identifiant Twitter</strong> de la présumée victime de cyber-harcèlement.</li>
+        <li>Puis, l'algorithme choisi détectera et affichera les <strong>tweets offensants</strong> adressés à cette personne,
+          ainsi que quelques <strong>statistiques</strong> réalisés sur ces résultats et pouvant permettre de quantifier le harcèlement qu'elle a reçu.</li>
+        <li>Vous pourrez accéder directement aux tweets sur Twitter en cliquant sur leur <strong>URL</strong> affiché sur la page de résultats.</li>
+        <li>Vous pourrez également <strong>supprimer</strong> les tweets qui ne vous paraissent pas offensants.</li>
+        <li>Enfin, vous pourrez <strong>imprimer</strong> ou <strong>enregistrer</strong> les tweets et les statistiques en faisant un clique droit sur la page de résultats,
+          puis en sélectionnant "Imprimer..." ou bien "Enregristrer sous..."</li>
+      </ol>
+    </p>
+
+    <br>
+
+    <h4>Q : Comment utiliser les informations du site ?</h4>
+
+    <p>R : Le site a pour but premier d'aider les victimes de cyber-harcèlement à récolter les informations nécessaires
+      à <strong>prouver le harcèlement</strong> qu'elles subissent auprès de la justice ou d'un établissement scolaire, par exemple.
+      Il est alors conseillé d'imprimer ou d'enregistrer les tweets et statistiques fournis par les algorithmes.
+      Cependant, ces résultas fournis par les algorithmes du site, ne constituant pas des preuves tangibles dans une opération judiciaire,
+      il est conseillé d'également conserver les URL des tweets (fournies par les algorithmes).
+      Les données disponibles sur le site peuvent également permettre à une victime ou à ses proches de :
+      <ul>
+        <li><strong>s'informer sur la legislation</strong> concernant le cyber-harcèlement : voir l'onglet <a href="{{ asset('law') }}">Loi sur le cyber-harcèlement</a></li>
+        <li>obtenir un <strong>soutien psychologique</strong> ou trouver de l'<strong>aide</strong> afin d'entreprendre des démarches judiciaires : voir l'onglet <a href="{{ asset('contacts') }}">Contacts</a></li>
+      </ul>
+      Toute donnée fournie par e-ustitia ne doit pas être utilisé à des fins malveillantes visant à stigmatiser un ou plusieurs utilisateurs.
+      L’équipe du site n’est responsable d’aucune utilisation malveillante des données fournies par les algorithmes.
+      </p>
+
+    <br>
+
+    <h4>Q : Je pense m’être fait harceler sur Twitter, que dois-je faire ?</h4>
+
+    <p>R : Premièrement, vous pouvez contacter le <strong>numéro vert</strong> national Net Ecoute qui est
+      une ligne d'écoute anonyme et gratuite où vous serez aidé et conseillé par des spécialistes.
+      En parallèle, il est possible de signaler les utilisateurs malveillants sur <strong>Twitter</strong> pour empêcher qu'il vous nuise à nouveau.
+      En cas de diffusion de contenu illégal ou d’insultes lié au sexe ou à l’orientation sexuelle,
+      il est recommandé d’effectuer un signalement auprès de la <strong>police</strong> ou la <strong>gendarmerie</strong>. Vous pouvez également
+      faire appel à un <strong>huissier de justice</strong> pour récolter des preuves et porter plainte (contre un individu ou contre X).</p>
+      <p>Pour plus d’informations sur les différentes démarches, rendez-vous sur l'onglet <a href="{{ asset('contacts') }}">Contacts</a>
+      du site e-ustitia pour être redirigé vers ces différents services.<p>
+
+    <br>
+
+    <h4>Q : Les recherches réalisées sur le site sont-elles anonymes ?</h4>
+
+    <p>R : Partiellement. L’adresse IP des requêtes et les tweets affichés suite à une recherche ne sont pas sauvegardés.
+      Seuls les <strong>identifiants Twitter</strong> saisis par les utilisateurs sur le site et la <strong>date</strong> à laquelle est faite la requête
+      sont conservés afin uniquemement de pouvoir mesurer l'activité sur le site.</p>
+
+    <br>
+
+    <h4>Q : Le programme est-il open source ?</h4>
+
+    <p>R : Les algorithmes utilisés par e-ustitia, faisant partie d’un projet scolaire, ne sont pas open source.
+      Si vous souhaitez avoir accès aux codes utilisés, veuillez contacter l'équipe d'e-usticia (voir l'onglet
+       <a href="{{ asset('contacts') }}">Contacts</a>)</p>
+
+
+{% endblock %}
