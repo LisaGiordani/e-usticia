@@ -1,5 +1,5 @@
 Ce projet a été réalisé par quatre étudiants de l'Ecole des Mines de Saint-Etienne :
-Lisa Giordani, Erwan Tinen-Touolac, Adrien Grimberg et Oscar Jozon, accompagnés par le tuteur du projet, M. Lefrançois.
+Lisa Giordani, Erwan Tinen-Touolac, Adrien Grimberg et Oscar Jozon, accompagnés par l'enseignant-chercheur de l'Institut Fayol, Maxime Lefrançois.
 
 
 Ce fichier présente les différents fichiers et dossiers presents dans le dossier _Rendu_technique_.
