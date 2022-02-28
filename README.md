@@ -1,3 +1,5 @@
+# Projet de détection du cyber-harcèlement sur Twitter (NLP)
+
 Ce projet a été réalisé par quatre étudiants de l'Ecole des Mines de Saint-Etienne :
 Lisa Giordani, Erwan Tinen-Touolac, Adrien Grimberg et Oscar Jozon, accompagnés par l'enseignant-chercheur de l'Institut Fayol, Maxime Lefrançois.
 
