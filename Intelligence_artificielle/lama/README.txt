@@ -4,7 +4,7 @@ Renommer ce répertoire ne cassera rien par contre.
 IMPORTANT 2 : La machine doit avoir les packages python concernés installés (tensorflow, keras, pandas, sys (mais ça normalement il est de base dans toutes les installs de python))
 
 
->À ne pas toucher sauf pour le plaisir : 
+>À ne pas toucher : 
 trainModels.py : entraine les deux réseaux (un à reconnaitre les harcèlement, l'autre à reconnaitre le non-harcèlement). Pour n'en entraîner qu'un, changez la localisation de la sauvegarde du réseau et exécutez uniquement la première partie du code (suivre les commentaires).
 
 >Ne fonctionnent que dans un IDE
