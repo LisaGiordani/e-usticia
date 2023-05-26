@@ -1,3 +1,5 @@
+![](website_banner.png)
+
 # Projet de détection du cyber-harcèlement sur Twitter (NLP)
 
 Ce projet a été réalisé par quatre étudiants de l'Ecole des Mines de Saint-Etienne :
